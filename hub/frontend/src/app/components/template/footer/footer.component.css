@@ -1,0 +1,15 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer > span {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.p-hub{
+    color: #1A69A0;
+}

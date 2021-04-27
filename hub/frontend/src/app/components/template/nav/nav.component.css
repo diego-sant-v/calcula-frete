@@ -1,0 +1,30 @@
+.sidenav {
+    background-color: #FDAA50;
+    width: 150px;
+}
+
+.sidenav a {
+    color: #FFF;
+}
+
+.sidenav i {
+    padding-right: 10px;
+}
+
+.content {
+    padding: 16px;
+    background-color: #FFF;
+}
+
+.loader-container{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+/*
+@media (max-width: 575.98px) { 
+    .nav-list_esconde{
+        visibility: hidden;
+    }
+ }
+*/

@@ -1,0 +1,40 @@
+<mat-card>
+    <mat-card-title>Novo Cliente</mat-card-title>
+    <form #f="ngForm">
+        <mat-form-field>
+            <input matInput placeholder="Nome" 
+            [(ngModel)]="cliente.name" name="name" required="true" id="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Cep" 
+            [(ngModel)]="cliente.cep" name="cep" id="cep"
+            (blur)="onKeyUp($event)" id="cep" required="true">
+        </mat-form-field>
+        
+        <div>
+            <label class="control-label">Deseja calcular o valor do frete?</label>
+            <div id="calculavalor" class="control-label">
+                <label  class="radio-inline">
+                    <input type="radio" id="calcula_valor-sim" value="sim" required="required" name="radio-escolhe"> Sim
+                </label>
+                <label  class="radio-inline">
+                    <input type="radio" id="calcula_valor-nao" value="nao" required="required" name="radio-escolhe"> Não
+                </label>
+            </div>
+        </div>
+        
+    </form>
+
+    <button mat-raised-button (click)="createCliente()"  color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+
+
+
+
+
