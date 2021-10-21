@@ -1,5 +1,4 @@
 # teste-hubCount
-teste para a empresa Hub Count
 
 É necessário instalar as depêndencias do angular e do projeto:
 na pasta back end usar o comando (no terminal) npm install
